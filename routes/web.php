@@ -25,4 +25,6 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::get('contact/messages', 'ContactController@getMessages')->name('get_messages');
+
 Route::post('contact/submit', 'ContactController@submit')->name('contact-form-submit');
